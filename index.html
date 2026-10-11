@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F172A">
+<title>مستودع الملفات</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{if(JSON.parse(localStorage.getItem("fv_theme"))==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<div id="boot"><div><img src="assets/logo.webp" alt=""><div class="spin"></div></div></div>
+
+<main id="auth" hidden></main>
+
+<div id="app" hidden>
+  <aside>
+    <div class="co"><span class="pill"><img class="colg" alt=""></span><b class="cn"></b></div>
+    <div class="brand"><img class="mkS" alt=""><span id="brand"></span></div>
+    <nav id="nav"></nav>
+    <button class="nv" id="out"></button>
+  </aside>
+  <div class="main" id="main">
+    <header class="top">
+      <div class="cot"><span class="pill"><img class="colg" alt=""></span><b class="cn"></b></div>
+      <label class="fld srch" id="srchbox"><span id="srchic"></span><input id="q" type="search"></label>
+      <button class="av" id="av"></button>
+    </header>
+    <section class="hero" id="hero">
+      <img class="art mkL" alt="">
+      <div class="g" id="greet"></div>
+      <h2 id="uname"></h2>
+      <div class="btns">
+        <button class="btn pri" id="bUp"></button>
+        <button class="btn" id="bFold"></button>
+        <button class="btn" id="bNote"></button>
+        <button class="btn" id="bPrint"></button>
+      </div>
+    </section>
+    <div class="rowh">
+      <div class="ttl"><button id="back" hidden></button><h2 id="h2"></h2></div>
+      <div class="sel"><button class="btn" id="bSel" style="min-height:38px;padding:7px 12px"></button><select id="sort"></select><select id="cat"></select></div>
+    </div>
+    <ul id="list"></ul>
+    <div id="stp" hidden></div>
+    <p class="foot">By Eng.Ali nadhim waheed for Sadiq Nadhim</p>
+    <input type="file" id="file" multiple hidden>
+  </div>
+</div>
+
+<div class="sbar" id="sbar" hidden></div>
+<div id="printArea"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
